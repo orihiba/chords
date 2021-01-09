@@ -52,12 +52,13 @@ function main()
 	// Get current ton
 	params = parseQuery(location.search);
 	ton = params['ton'];
+	
 	if (ton == '') {
 		ton = '0';
 	}
 	
 	// Load the song with ton - 0.5
-	new_ton = parseInt(ton) - 0.5;
+	new_ton = parseFloat(ton) - 0.5;
 	let new_url = location.protocol + '//' + location.host + location.pathname + '?ton=' + new_ton
 	// let old_url_path = location.pathname + '?' + location.search
 	
