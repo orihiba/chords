@@ -1,0 +1,16 @@
+{
+  "name": "Chords",
+  "version": "1.0",
+  "description": "Change chords key",
+  "permissions": ["activeTab", "declarativeContent", "storage", "https://www.tab4u.com/"],
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.tab4u.com/*"
+      ],
+      "js": ["content.js"]
+    }],
+  
+  "manifest_version": 2
+}
